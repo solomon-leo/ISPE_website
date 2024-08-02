@@ -16,12 +16,36 @@
             font-size: 40px;
             margin: 0.5%;
         }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flex-container div {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .officer-img {
+            width: 1000px;
+            height: 700px;
+            border-radius: 5px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 15px;
+        }
+
     </style>
 </head>
 <body>
     <div id = 'menus'>
         <ul class = 'navbar'>
-            <li class = 'name'><a class = 'name'>ISPE</a></li>
+            <li class="name"><a target = '_blank' href = https://ispe.org class="name">ISPE</a></li>
             <li class = 'name'><a class = 'name'>    </a></li>
 
             <li class = 'active'><a href="./index.html" class = 'nav'>Home</a></li>
@@ -41,7 +65,12 @@
         <h2>The University of Texas at Austin</h2>
     </div>
 
-    <div id = about-images>
+    <div class = officer-container>
+        <div class = flex-container>
+            <div>
+                <img src = './officers/rohan.jpg' alt = 'President' class = officer-img>
+            </div>
+        </div>
     </div>
     
 </body>
