@@ -16,6 +16,45 @@
             font-size: 40px;
             margin: 0.5%;
         }
+
+        .header {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex-container div {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .officer-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        .officer-container {
+            margin-top: 10px;
+        }
+
+        .members-img {
+            width: 550px;
+            height: 550px;
+            border-radius: 5px;
+        }
+
+        p {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 35px;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -35,7 +74,54 @@
         </ul>
     </div>
 
-    <h1>About Us</h1>
-    
+    <div class = header>
+        <h2>We are a nonprofit association serving its members by leading scientific, technical,
+            and regulatory advancement throughout the pharmaceutical lifecycle.</h2>
+    </div>
+
+    <div class = officer-container>
+        <div class = flex-container>
+            <div>
+                <img src = './about-us-img/cv-accountability - Copy.png' alt = 'Accountability' class = officer-img>
+                <h3>Accountability</h3>
+            </div>
+
+            <div>
+                <img src = './about-us-img/cv-collaboration - Copy.png' alt = 'Collaboration' class = officer-img>
+                <h3>Collaboration</h3>
+            </div>
+
+            <div>
+                <img src = './about-us-img/cv-integrity - Copy.png' alt = 'Integrity' class = officer-img>
+                <h3>Integrity</h3>
+            </div>
+
+            <div>
+                <img src = './about-us-img/cv-professional-excellence.png' alt = 'Professional Excellence' class = officer-img>
+                <h3>Professional Excellence</h3>
+            </div>
+
+            <div>
+                <img src = './about-us-img/cv-respect.png' alt = 'Respect' class = officer-img>
+                <h3>Respect</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class = officer-container>
+        <div class = flex-container>
+            <div>
+                <p>All scientific and technical areas of the pharmaceutical manufacturing industry are represented among the ISPE membership.
+                     Engineers, microbiologists, chemists, QA/QC, production, process development, pharmacists, regulatory and training personnel, 
+                     academia, suppliers, and other professionals contribute their expertise to the industry through their participation in ISPE 
+                     activities.
+                </p>
+            </div>
+
+            <div>
+                <img src = './officers/rohan.jpg' alt = 'President' class = members-img>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
