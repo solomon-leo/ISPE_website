@@ -83,4 +83,22 @@ body {
 }
  #menus {
     background-color: white;
- }
+}
+
+.jimtainer {
+    margin-top: 0%;
+}
+
+.jimtainer a {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    }
+
+.jimtainer h1 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    }

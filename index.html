@@ -2,47 +2,68 @@
 <html>
 <head>
     <title>UT ISPE</title>
-    <link href = './stylesheet.css' rel = 'stylesheet'>
+    <link href="./stylesheet.css" rel="stylesheet">
     <style>
         h1 {
-        text-align: center;
-        font-size: 70px;
-        text-transform: uppercase;
-        margin-bottom: 0%;
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 0%;
         }
 
         h2 {
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
             margin: 0.5%;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 40px;
         }
 
         .flex-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
         }
 
         .flex-container div {
             margin: 20px;
             padding: 20px;
-            text-align: center;
+        }
+
+        .flex-container #text {
+            margin: 20px;
+            padding: 20px;
         }
 
         .officer-img {
-            width: 1000px;
-            height: 700px;
+            width: 200px;
+            height: 200px;
             border-radius: 5px;
         }
 
-        .header {
-            text-align: center;
-            padding: 15px;
+        .officer-container {
+            margin-top: 10px;
         }
 
+        .members-img {
+            width: 550px;
+            height: 550px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 30px;
+            margin: 0;
+        }
     </style>
 </head>
 <body>
+    <div class = jimtainer>
+        <h1><a href = 'index.html' class = nav>UT Austin ISPE</a></h1>
+    </div>
+
     <div id = 'menus'>
         <ul class = 'navbar'>
             <li class="name"><a target = '_blank' href = https://ispe.org class="name">ISPE</a></li>
@@ -59,16 +80,19 @@
         </ul>
     </div>
 
-    <div id = about-text>
-
-        <h1>International Society of Pharmaceutical Engineers</h1>
-        <h2>The University of Texas at Austin</h2>
-    </div>
-
     <div class = officer-container>
         <div class = flex-container>
+            <div id = text>
+                <h1>International Society of Pharmaceutical Engineers</h1>
+                <h2>UT Austin Chapter</h2>
+                <br><br><br><br>
+                <p>In a world where the pursuit of excellence knows no boundaries, ISPE is shaping the 
+                    future of the pharmaceutical industry. We are committed to the advancement of the educational 
+                    and technical efficiency of our members.</p>
+            </div>
+
             <div>
-                <img src = './officers/rohan.jpg' alt = 'President' class = officer-img>
+                <img src = './officers/rohan.jpg' alt = 'President' class = members-img>
             </div>
         </div>
     </div>
