@@ -1,62 +1,64 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UT ISPE</title>
     <link href="./stylesheet.css" rel="stylesheet">
     <style>
         h1 {
             text-align: center;
-            font-size: 40px;
+            font-size: 5vw;
             text-transform: uppercase;
-            margin-bottom: 0%;
+            margin-bottom: 0;
+            color: white;
         }
 
         h2 {
             text-align: center;
-            font-size: 30px;
+            font-size: 3.5vw;
             margin: 0.5%;
+            color:white;
+        }
+
+        h3 {
+            font-size: 4vw;
+            margin:0;
+            padding:0;
         }
 
         .header {
             text-align: center;
             margin-top: 40px;
+            margin:0;
+            padding:0;
+            background-color: #bf5700;
         }
 
         .flex-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
         }
 
         .flex-container div {
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .flex-container #text {
-            margin: 20px;
-            padding: 20px;
-        }
-
-        .officer-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 5px;
-        }
-
-        .officer-container {
-            margin-top: 10px;
+            margin: 10px;
         }
 
         .members-img {
-            width: 550px;
-            height: 550px;
+            width: 450px;
+            height: auto;
+            max-width: 30%;
             border-radius: 5px;
         }
 
         p {
-            font-size: 30px;
+            font-size: 2.5vw;
             margin: 0;
         }
+
     </style>
 </head>
 <body>
@@ -65,10 +67,9 @@
     </div>
 
     <div id = 'menus'>
-        <ul class = 'navbar'>
+        <ul class = 'navbar'> 
             <li class="name"><a target = '_blank' href = https://ispe.org class="name">ISPE</a></li>
-            <li class = 'name'><a class = 'name'>    </a></li>
-
+            <li class = 'name'><a class = 'name'>    </a></li><!-- please fix this wtf-->
             <li class = 'active'><a href="./index.html" class = 'nav'>Home</a></li>
             <li class = 'nav'><a href="./about_us.html" class = 'nav'>About Us</a></li>
             <li class = 'nav'><a href="./officers.html" class = 'nav'>Officers</a></li>
@@ -79,22 +80,18 @@
             <li class = 'social'><a target = '_blank' href = https://forms.gle/28dvie6cbpdrpcfC8 class = social>Join</a></li>
         </ul>
     </div>
-
-    <div class = officer-container>
-        <div class = flex-container>
-            <div id = text>
-                <h1>International Society of Pharmaceutical Engineers</h1>
-                <h2>UT Austin Chapter</h2>
-                <br><br><br><br>
-                <p>In a world where the pursuit of excellence knows no boundaries, ISPE is shaping the 
-                    future of the pharmaceutical industry. We are committed to the advancement of the educational 
-                    and technical efficiency of our members.</p>
-            </div>
-
-            <div>
-                <img src = './officers/rohan.jpg' alt = 'President' class = members-img>
-            </div>
+    
+    <div class='header'>
+        <h1>The International Society of Pharmaceutical Engineers</h1>
+        <h2>UT Austin Chapter</h2>
+    </div>
+    <div class = flex-container>
+        <div id = text>
+            <h3>ISPE is UT Austin's window into Pharma</h3>
+            <p>In a world where the pursuit of excellence knows no boundaries, we are committed to the advancement of the educational 
+                and technical efficiency of our members.</p>
         </div>
+            <img src = './ISPE_logo.jpg' alt = 'ISPE_Logo' class = members-img>
     </div>
     
 </body>
