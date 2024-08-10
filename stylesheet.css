@@ -1,9 +1,5 @@
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+.left, .right {
+    flex:1
 }
 
 .nav {
@@ -42,7 +38,6 @@ a.active {
 
 .name {
     float: left;
-    align-items: center;
     font-size: 16px;
 }
 
@@ -81,8 +76,11 @@ body {
     text-align: left;
     font-size: 40px;
 }
- #menus {
+
+ .menus {
+    display: flex;
     background-color: white;
+    justify-content: space-between;
 }
 
 .jimtainer {
