@@ -81,6 +81,7 @@ body {
     display: flex;
     background-color: white;
     justify-content: space-between;
+    margin: 10px;
 }
 
 .jimtainer {
