@@ -23,13 +23,24 @@
         }
 
         h3 {
-            font-size: 4vw;
-            margin: 5px;
+            font-size: 3.25vw;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: #333f48;
+            text-align: left;
+        }
+
+        h4 {
+            font-size: 3.5vw;
+            color: #333f48;
+            margin: auto;
+            text-align: left;
         }
         
         p {
-            font-size: 2.5vw;
-            margin: 5px;
+            font-size: 2vw;
+            color: #333f48;
+            text-align: left;
         }
 
         .header {
@@ -43,22 +54,60 @@
             flex-direction: column;
         }
 
-        .flex-container {
+        .body {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+        }
+
+        .mission-statement {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
+            padding:15px;
+            margin-top: 32px;
+            margin-bottom: 32px;
         }
 
-        .flex-container div {
-            margin: 10px;
-        }
-
-        .members-img {
+        .logo-img {
             width: 450px;
             height: auto;
             max-width: 30%;
             border-radius: 5px;
+        }
+
+        .about {
+            display: flex;
+            background-color: #d6d2c4;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: flex-start; */
+            padding: 15px;
+            height: 400px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .link {
+            background-color: #f8971f; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Align with other elements */
+            font-size: 16px; /* Font size */
+            margin: 16px; /* Margin */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 8px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .link:hover {
+            background-color: #bf5700; /* Darker green on hover */
         }
 
     </style>
@@ -91,13 +140,31 @@
         <h1>The International Society of Pharmaceutical Engineers</h1>
         <h2>UT Austin Chapter</h2>
     </div>
-    <div class = flex-container>
-        <div id = text>
-            <h3>ISPE is UT Austin's window into Pharma</h3>
-            <p>In a world where the pursuit of excellence knows no boundaries, we are committed to the advancement of the educational 
-                and technical efficiency of our members.</p>
+    <div class = 'body'>
+        <div class = 'mission-statement'>
+            <div id = text>
+                <h3>UT Austin's window into pharma</h3>
+                <p>In a world where the pursuit of excellence knows no boundaries, we are committed to the advancement of the educational 
+                    and technical efficiency of our members.</p>
+            </div>
+                <img src = './logo_detailed.PNG' alt = 'ISPE_Logo' class = logo-img>
         </div>
-            <img src = './ISPE_logo.jpg' alt = 'ISPE_Logo' class = members-img>
+
+        <div class = 'about'>
+            <h3>What do we do?</h3>
+            <p>We aim educate students on the pharmaceutical industry through industry leaders, professors, and (most importantly) other students.
+                <br> <br>
+                If you are even remotely interested in pharmaceuticals, <strong>ISPE is for you.</strong>
+            </p>
+            <div class = 'links'>
+                <a href="https://forms.gle/28dvie6cbpdrpcfC8" class="link" target = '_blank'>
+                    JOIN NOW
+                </a>
+                <a href=contact.html class="link">
+                    CONTACT US
+                </a>
+            </div>
+        </div>
     </div>
     
 </body>
