@@ -87,7 +87,6 @@
             background-color: #d6d2c4;
             flex-direction: column;
             justify-content: center;
-            /* align-items: flex-start; */
             padding: 15px;
             height: 400px;
         }
@@ -98,7 +97,7 @@
         }
 
         .link {
-            background-color: #f8971f; /* Green background */
+            background-color: #f8971f; /* burnt orange background */
             border: none; /* Remove borders */
             color: white; /* White text */
             padding: 15px 32px; /* Padding */
@@ -114,6 +113,20 @@
 
         .link:hover {
             background-color: #bf5700; /* Darker green on hover */
+        }
+
+
+        @media (max-width: 600px) {
+            .about {
+                height: auto; /* Allow height to adjust based on content */
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+
+            .logo-img {
+                height: auto;
+                width: 100%;
+                max-width: none;
+            }
         }
 
     </style>
