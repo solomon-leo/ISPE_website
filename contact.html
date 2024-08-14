@@ -6,17 +6,39 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         h1 {
-            text-align: center;
-            font-size: 70px;
-            text-transform: uppercase;
-            margin-bottom: 0;
-            margin-top: 0;
+        text-align: center;
+        font-size: 70px;
+        text-transform: uppercase;
+        margin-bottom: 0%;
         }
 
         h2 {
             text-align: center;
             font-size: 40px;
             margin: 0.5%;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .flex-container div {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .officer-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 15px;
         }
     </style>
 </head>
@@ -32,6 +54,7 @@
 
         <div>
             <div class = 'nav'><a href="./index.html" class = 'nav'>Home</a></div>
+            <div class = 'nav'><a href="./about_us.html" class = 'nav'>About Us</a></div>
             <div class = 'nav'><a href="./officers.html" class = 'nav'>Officers</a></div>
             <div class = 'nav'><a href="./events.html" class = 'nav'>Events</a></div>
             <div class = 'active'><a href="./contact.html" class = 'nav'>Contact</a></div>
@@ -43,7 +66,21 @@
         </div>
     </div>
 
-    <h1>Contact Us</h1>
+    <div class = officer-container>
+        <h1 class = 'header'>Contact Us</h1>
+        <div class = flex-container>
+            <div>
+                <img src = './officers/lan.png' alt = 'President' class = officer-img>
+                <h3>Lan@utexas.placeholder</h3>
+                <p>VP, External</p>
+            </div>
+            <div>
+                <img src = './officers/rohan.jpg' alt = 'Vice President' class = officer-img>
+                <h3>ISPE@utexas.placeholder</h3>
+                <p>Contact ISPE</p>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
