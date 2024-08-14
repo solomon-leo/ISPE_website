@@ -24,7 +24,7 @@
         }
 
         h3 {
-            font-size: 3.25vw;
+            font-size: 48px;
             margin-top: 15px;
             margin-bottom: 15px;
             color: #333f48;
@@ -39,7 +39,7 @@
         }
         
         p {
-            font-size: 2vw;
+            font-size: 32px;
             color: #333f48;
             text-align: left;
         }
@@ -63,11 +63,16 @@
 
         .mission-statement {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             padding:15px;
             margin-top: 32px;
             margin-bottom: 32px;
+        }
+
+        .text {
+            width: 1000px;
         }
 
         .logo-img {
@@ -82,7 +87,6 @@
             background-color: #d6d2c4;
             flex-direction: column;
             justify-content: center;
-            /* align-items: flex-start; */
             padding: 15px;
             height: 400px;
         }
@@ -93,7 +97,7 @@
         }
 
         .link {
-            background-color: #f8971f; /* Green background */
+            background-color: #f8971f; /* burnt orange background */
             border: none; /* Remove borders */
             color: white; /* White text */
             padding: 15px 32px; /* Padding */
@@ -111,6 +115,20 @@
             background-color: #bf5700; /* Darker green on hover */
         }
 
+
+        @media (max-width: 600px) {
+            .about {
+                height: auto; /* Allow height to adjust based on content */
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+
+            .logo-img {
+                height: auto;
+                width: 100%;
+                max-width: none;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -125,7 +143,6 @@
 
         <div>
             <div class = 'active'><a href="./index.html" class = 'nav'>Home</a></div>
-            <div class = 'nav'><a href="./about_us.html" class = 'nav'>About Us</a></div>
             <div class = 'nav'><a href="./officers.html" class = 'nav'>Officers</a></div>
             <div class = 'nav'><a href="./events.html" class = 'nav'>Events</a></div>
             <div class = 'nav'><a href="./contact.html" class = 'nav'>Contact</a></div>
@@ -143,17 +160,16 @@
     </div>
     <div class = 'body'>
         <div class = 'mission-statement'>
-            <div id = text>
+            <div class = 'text'>
                 <h3>UT Austin's window into pharma</h3>
-                <p>In a world where the pursuit of excellence knows no boundaries, we are committed to the advancement of the educational 
-                    and technical efficiency of our members.</p>
+                <p>In the rapidly moving landscape of pharmaceuticals, we connect the leaders of tomorrow with the leaders of today</p>
             </div>
                 <img src = './logo_detailed.PNG' alt = 'ISPE_Logo' class = logo-img>
         </div>
 
         <div class = 'about'>
             <h3>What do we do?</h3>
-            <p>We aim educate students on the pharmaceutical industry through industry leaders, professors, and (most importantly) other students.
+            <p>We educate students on the pharmaceutical industry through industry leaders, professors, and other students.
                 <br> <br>
                 If you are even remotely interested in pharmaceuticals, <strong>ISPE is for you.</strong>
             </p>
