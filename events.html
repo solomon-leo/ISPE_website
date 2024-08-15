@@ -28,6 +28,18 @@
             align-items: center;
         }
 
+        .google-cal-cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: rgb(76, 156, 222);
+            font-size: italic;
+            text-decoration: none;
+        }
+
     </style>
     <link href = './stylesheet.css' rel = 'stylesheet'>
 </head>
@@ -43,7 +55,6 @@
 
         <div>
             <div class = 'nav'><a href="./index.html" class = 'nav'>Home</a></div>
-            <div class = 'nav'><a href="./about_us.html" class = 'nav'>About Us</a></div>
             <div class = 'nav'><a href="./officers.html" class = 'nav'>Officers</a></div>
             <div class = 'active'><a href="./events.html" class = 'nav'>Events</a></div>
             <div class = 'nav'><a href="./contact.html" class = 'nav'>Contact</a></div>
@@ -56,12 +67,16 @@
     </div>
 
     <h1>Events</h1>
-    <h2>Join our google calendar to stay updated on our events!</h2>
 
-    <div class = 'google-cal'>
-        <a href = 'https://ispe.org/'>
-            <img src = './gcal-img.jpg' alt = 'Google Calendar' class = 'google-cal'>
-        </a>
+    <div class = google-cal-cont>
+        <h2>Join our 
+            <a href = https://calendar.google.com/calendar/embed?src=solomon.leo%40utexas.edu&ctz=America%2FChicago>Google Calendar</a>
+        </h2>
+    </div>
+
+    <div class = 'google-cal-cont'>
+        <iframe src="https://calendar.google.com/calendar/embed?src=solomon.leo%40utexas.edu&ctz=America%2FChicago" 
+        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     
 </body>
